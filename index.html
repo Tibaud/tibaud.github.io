@@ -1,6 +1,7 @@
 <!doctype html>
 <html itemscope="" itemtype="http://schema.org/WebPage" lang="fr">
 <head>
+<meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
 <title>Google Bitch!</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,26 +11,50 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="header">
-  </div>
-
-  <div id="content">
-    <img src="../files/logo-google.png" alt="I'm Google Bitch" width="272px" height="92px"/>
-    <div id="box">
+  <div id="container">
+    <div id="header">
+    <div class="links">
+      <ul>
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+        <li><a href="#"><img src="files/puce-1.png" alt="App Google" title="App Google"></a></li>
+        <li class="connec"><a href="#">Connexion</a></li>
+      </ul>
     </div>
-    <div id="boutons">
-      <div class="bouton">
+    </div>
+    <div id="content">
+      <img src="files/logo-google.png" alt="I'm Google Bitch" width="272px" height="92px"/>
+      <hr>
+      <div id="box">
+        <form method="get" id="searchform" class="search-form" action="#" _lpchecked="1">
+        <fieldset>
+        <input name="s" id="s" value="" placeholder="" type="text">
+        </button>
+        </fieldset>
+        </form>
       </div>
-      <div class="bouton">
+      <div id="boutons">
+        <div class="bouton">
+<input value="Recherche Google" type="submit">
+        </div>
+        <div class="bouton">
+<input value="J'ai de la chance" type="submit">
+        </div>
       </div>
     </div>
-  </div>
+      </div>
+<div id="footer">
+      <div class="footer1"><span>France</span>
+      </div>
+      <div class="footer2">
+        <span><a href="#">Publicité</a> <a href="#">Entreprise</a> <a href="#">A propos</a></span>
+        <span class="right"<a class="right" href="#">Confidentialité</a>
+        <a href="#">Conditions</a>
+        <a href="#">Paramètres</a>
+        <a href="#">Utiliser Google</a></span>
+      </div>
+    </div>
 
-  <div id="footer">
-    <div class="footer1">
-    </div>
-    <div class="footer2">
-    </div>
-  </div>
+
 </body>
 </html>
