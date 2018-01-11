@@ -3,12 +3,31 @@
 <head>
 <meta charset="utf-8">
 <meta name="robots" content="noindex, nofollow">
-<title>Google Bitch!</title>
+<title>Google+Java Bitch!</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta content="../files/google.ico" itemprop="image"><link href="../files/google.ico" rel="shortcut icon">
 <meta name="description" content="Exercice THP Google Home." />
 <link rel="canonical" href="https://www.google.com/" />
 <link rel="stylesheet" href="style.css">
+<script type="text/javascript">
+
+//afficher / cacher ma div
+function toggle(anId)
+{
+	node = document.getElementById(anId);
+	if (node.style.visibility=="hidden")
+	{
+		// Contenu caché, le montrer
+		node.style.visibility = "visible";
+	}
+	else
+	{
+		// Contenu visible, le cacher
+		node.style.visibility = "hidden";
+	}
+}
+
+</script>
 </head>
 <body>
   <div id="container">
@@ -22,7 +41,8 @@
       </ul>
     </div>
     </div>
-    <div id="content">
+    <div id="swap" onclick = "toggle('content'),toggle('swap')">Cliquez pour afficher le contenu !</div>
+    <div id="content" style="visibility:hidden;">
       <img src="files/logo-google.png" alt="I'm Google Bitch" width="272px" height="92px"/>
       <hr>
       <div id="box">
@@ -43,7 +63,8 @@
     </div>
       </div>
 <div id="footer">
-      <div class="footer1"><span>France</span>
+      <div class="footer1"><span>France</span> <script src="../GoogleJava/js/js.js"></script>
+
       </div>
       <div class="footer2">
         <span><a href="#">Publicité</a> <a href="#">Entreprise</a> <a href="#">A propos</a></span>
@@ -53,7 +74,5 @@
         <a href="#">Utiliser Google</a></span>
       </div>
     </div>
-
-
 </body>
 </html>
