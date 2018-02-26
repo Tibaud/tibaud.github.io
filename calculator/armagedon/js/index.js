@@ -82,9 +82,9 @@ TODO:
     // If NaN or Infinity returned
     if (!isFinite(resultNum)) {
       if (isNaN(resultNum)) { // If result is not a number; set off by, eg, double-clicking operators
-        resultNum = "You broke it!";
+        resultNum = "Tu as tout pété!!";
       } else { // If result is infinity, set off by dividing by zero
-        resultNum = "Look at what you've done";
+        resultNum = "NOOOOOnnnnooooonnnooooooOOONNNN";
         el('#calculator').classList.add("broken"); // Break calculator
         el('#reset').classList.add("show"); // And show reset button
       }
