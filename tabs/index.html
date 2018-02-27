@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tab with JS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* tab en cours */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Contenu de la tab */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+</style>
+</head>
+<body>
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Accueil')">Accueil</button>
+  <button class="tablinks" onclick="openTab(event, 'Menu')">Menu</button>
+  <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+</div>
+
+<div id="Accueil" class="tabcontent">
+  <h3>Accueil</h3>
+  <p>Slider</p>
+</div>
+
+<div id="Menu" class="tabcontent">
+  <h3>Menu</h3>
+  <p>Tout plein de truc à Miam.</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Reserve en ligne!</p>
+</div>
+
+<script>
+function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+</script>
+
+</body>
+</html>
